@@ -7,7 +7,7 @@ output:
 
 
 ## Loading and preprocessing the data
-First I set the file URL, download the file, record when it was downloaded, unzip the file and load it into R.  
+1. First I set the file URL, download the file, record when it was downloaded, unzip the file and load it into R.
     ```{r echo = TRUE}
     fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
     download.file(fileUrl, destfile = "activity.zip")

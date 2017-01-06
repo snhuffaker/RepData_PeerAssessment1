@@ -2,7 +2,7 @@
 
 
 ## Loading and preprocessing the data
-First I set the file URL, download the file, record when it was downloaded, unzip the file and load it into R.  
+1. First I set the file URL, download the file, record when it was downloaded, unzip the file and load it into R.
     
     ```r
     fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
@@ -28,7 +28,7 @@ First I set the file URL, download the file, record when it was downloaded, unzi
     ```
     
     ```
-    ## [1] "Fri Jan 06 13:09:19 2017"
+    ## [1] "Fri Jan 06 13:11:51 2017"
     ```
 
 ## What is mean total number of steps taken per day?

@@ -122,9 +122,9 @@ $(document).ready(function () {
 
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
-<p>First I set the file URL, download the file, record when it was downloaded, unzip the file and load it into R.</p>
-<pre><code>```r
-fileUrl &lt;- &quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;
+<ol style="list-style-type: decimal">
+<li><p>First I set the file URL, download the file, record when it was downloaded, unzip the file and load it into R.</p>
+<pre class="r"><code>fileUrl &lt;- &quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;
 download.file(fileUrl, destfile = &quot;activity.zip&quot;)
 dateDownloaded &lt;- date()
 
@@ -132,23 +132,14 @@ unzip(&quot;activity.zip&quot;)
 
 data &lt;- read.csv(&quot;activity.csv&quot;)
 
-str(data)
-```
-
-```
-## 'data.frame':    17568 obs. of  3 variables:
+str(data)</code></pre>
+<pre><code>## 'data.frame':    17568 obs. of  3 variables:
 ##  $ steps   : int  NA NA NA NA NA NA NA NA NA NA ...
 ##  $ date    : Factor w/ 61 levels &quot;2012-10-01&quot;,&quot;2012-10-02&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
-##  $ interval: int  0 5 10 15 20 25 30 35 40 45 ...
-```
-
-```r
-print(dateDownloaded)
-```
-
-```
-## [1] &quot;Fri Jan 06 13:09:19 2017&quot;
-```</code></pre>
+##  $ interval: int  0 5 10 15 20 25 30 35 40 45 ...</code></pre>
+<pre class="r"><code>print(dateDownloaded)</code></pre>
+<pre><code>## [1] &quot;Fri Jan 06 13:11:51 2017&quot;</code></pre></li>
+</ol>
 </div>
 <div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
 <h2>What is mean total number of steps taken per day?</h2>

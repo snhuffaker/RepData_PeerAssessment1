@@ -28,7 +28,7 @@
     ```
     
     ```
-    ## [1] "Fri Jan 06 13:11:51 2017"
+    ## [1] "Fri Jan 06 13:15:49 2017"
     ```
 
 ## What is mean total number of steps taken per day?
@@ -107,7 +107,7 @@
       mdata <- merge(data, int_mean, by = "interval")
     ```
 
-3. Next I replaced NA values with the mean value merged into the data frame in the previous dataset.
+3. Next I replaced NA values with the mean value merged into the data frame in the previous dataset.  The warning received is expected because only the NA values are being replaced - not all values.
     
     ```r
       mdata$steps.x[which(is.na(mdata$steps.x))] <- mdata$steps.y
